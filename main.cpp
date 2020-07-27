@@ -339,7 +339,6 @@ TEST_CASE(orm_query_multi_table){
     TEST_CHECK(postgres.insert(v)==3);
     TEST_REQUIRE(postgres.create_datatable<person>(key1, not_null));
     TEST_CHECK(postgres.insert(v1)==3);
-    TEST_CHECK(sqlite.insert(v1)==3);
     auto result1 = postgres.query<std::tuple<int, std::string, double>>("select person.*, student.name, student.age from person, student"s);
     TEST_CHECK(result1.size()==9);
     auto result4 = postgres.query<std::tuple<person, student>>("select * from person, student"s);
