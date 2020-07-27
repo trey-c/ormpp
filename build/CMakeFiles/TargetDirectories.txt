@@ -1,3 +1,0 @@
-/home/trey/Code/Forks/ormpp/build/CMakeFiles/rebuild_cache.dir
-/home/trey/Code/Forks/ormpp/build/CMakeFiles/edit_cache.dir
-/home/trey/Code/Forks/ormpp/build/CMakeFiles/ormpp.dir
