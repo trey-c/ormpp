@@ -7,11 +7,9 @@
 
 #include <string>
 #include <type_traits>
-#ifdef _MSC_VER
-#include <include/libpq-fe.h>
-#else
-#include <postgresql/libpq-fe.h>
-#endif
+#include <libpq-fe.h>
+#include <vector>
+#include <iguana/iguana/reflection.hpp>
 
 using namespace std::string_literals;
 
