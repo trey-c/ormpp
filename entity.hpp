@@ -6,20 +6,39 @@
 #include <set>
 #include <string>
 
-struct ormpp_not_null{
+struct ormpp_not_null
+{
     std::set<std::string> fields;
 };
 
-struct ormpp_key{
+struct ormpp_key
+{
     std::string fields;
 };
 
-struct ormpp_auto_key{
+struct ormpp_int
+{
     std::string fields;
 };
 
-struct ormpp_unique {
-	std::string fields;
+struct ormpp_string
+{
+    std::string fields;
 };
 
-#endif //ORM_ENTITY_HPP
+struct ormpp_float
+{
+    std::string fields;
+};
+
+struct ormpp_auto_key
+{
+    std::string fields;
+};
+
+struct ormpp_unique
+{
+    std::string fields;
+};
+
+#endif // ORM_ENTITY_HPP
