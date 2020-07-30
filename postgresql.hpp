@@ -522,7 +522,7 @@ private:
         }
 
         sql += ");";
-        // std::cout << sql << "\n";
+        std::cout << sql << "\n";
         return sql;
     }
 
